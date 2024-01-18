@@ -1,0 +1,119 @@
+*{
+    /* padding, border가 width에 포함된다. */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.header-nav-list-wrapper{
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-nav-list-wrapper > li{
+    margin-left: 10px;
+}
+
+.toggle-button{
+    background-color: #000;
+    color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding:5px 8px;
+    cursor:pointer;
+}
+
+.main-container{
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.image-logo{
+    width: 272px;
+}
+
+.search-container{
+    margin-top: 50px;
+    position: relative;
+}
+
+.search-input{
+    width: 100%;
+    height: 44px;
+    padding-left: 40px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+}
+
+.search-icon{
+    width: 15px;
+    position: absolute; 
+    left: 15px;
+    top: 15px;
+    
+}
+.bookmark-section{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bookmark-item{
+    margin-top: 20px;
+    /* a태그 속성 제거 */
+    text-decoration: none;
+    width: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bookmark-item:hover{
+    opacity: 0.5;
+}
+
+.img-icon-wrapper{
+    width: 60px;
+    height: 60px;
+    background-color: #f2f3f5;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-icon-wrapper > img{
+    width: 60%;
+}
+
+
+
+/* 다크 모드용 css */
+.toggle-button-darkmode{
+    background-color: #fff;
+    color: #000;
+}
+
+.body-background-darkmode{
+    background-color: #000;
+}
+
+.img-icon-wrapper-darkmode{
+    background-color: #fff;
+}
+
+.text-darkmode{
+    color: #fff;
+}

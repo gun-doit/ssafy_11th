@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header class="header-nav">
+        <ul class="header-nav-list-wrapper">
+            <li>Gmail</li>
+            <li>이미지</li>
+            <li>
+                <button class="toggle-button">다크모드</button>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main-container">
+        <!-- 로고 -->
+        <h1>
+            <img class="image-logo" src="./images/logo.png" alt="구글 로고">
+        </h1>
+        <!-- 검색 -->
+        <div class="search-container">
+            <input class="search-input" type="text" placeholder="Google 검색 또는 URL 입력">
+            <img class="search-icon" src="./images/search.png" alt="">
+        </div>
+
+        <!-- 북마크 -->
+        <section class="bookmark-section">
+            <a href="#none" class="bookmark-item">
+                <div class="img-icon-wrapper">
+                    <img src="./images/ssafy.png" alt="">
+                </div>
+                <div class="bookmark-text">Ssafy</div>
+            </a>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
